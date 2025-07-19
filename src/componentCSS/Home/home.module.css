@@ -1,0 +1,62 @@
+.mainHomePageContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+  flex-direction: row;
+}
+
+/* CARDS BUTTON  */
+.mainPageNavButtonCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #bbb18b;
+  border-radius: 1em;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  background-image: url("../../../public/cardHome.jpg");
+}
+
+.mainPageNavButtonCards span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border: #bbb18b solid 1px;
+  width: 100%;
+  background-color: #bbb18b;
+  text-align: center;
+  color: black;
+  opacity: 90%;
+}
+
+/* CARDS BUTTON END  */
+
+.mainPageNavButtonCollection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #bbb18b;
+  border-radius: 1em;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  background-image: url("../../../public/collectionHome.jpg");
+}
+
+.mainPageNavButtonCollection span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border: #bbb18b solid 1px;
+  width: 100%;
+  background-color: #bbb18b;
+  text-align: center;
+  color: black;
+  opacity: 90%;
+}
+
+:global(a) {
+  text-decoration: none;
+  font-size: 10px;
+}

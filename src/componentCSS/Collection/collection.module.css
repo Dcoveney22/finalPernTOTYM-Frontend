@@ -1,0 +1,48 @@
+.collectionSuccessContainer {
+  display: flex;
+  width: auto;
+  margin-top: 50px;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.messageContainer {
+  color: black;
+  /* width: 100%; */
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  background-color: #bbb18b;
+  border-radius: 1em;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: #bbb18b 0.5px solid;
+  border-radius: 1em;
+  padding: 3px;
+}
+
+.viewCollection {
+  width: 80px;
+  background-color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 5px;
+  border-radius: 1em;
+  font-weight: 500;
+}
+
+.viewCollection a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}

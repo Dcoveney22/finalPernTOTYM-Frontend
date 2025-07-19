@@ -1,0 +1,25 @@
+.mainHeaderContainer {
+  /* border-bottom: #bbb18b 3px solid; */
+  /* background-color: #000; */
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHeaderLogo {
+  margin-top: 20px;
+  width: 180px;
+}
+
+.navigationContainer a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #bbb18b;
+}
