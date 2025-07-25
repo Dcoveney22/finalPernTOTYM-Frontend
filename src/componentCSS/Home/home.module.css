@@ -1,6 +1,7 @@
 .mainHomePageContainer {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 50px;
   margin-right: 12.5px;
   margin-left: 12.5px;
@@ -10,6 +11,7 @@
 /* CARDS BUTTON  */
 .mainPageNavButtonCards {
   display: flex;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
   border: solid 3px #bbb18b;
@@ -17,7 +19,7 @@
   width: 150px;
   height: 150px;
   text-decoration: none;
-  background-image: url("../../../public/cardHome.jpg");
+  background-image: url("cardHome.jpg");
 }
 
 .mainPageNavButtonCards span {
@@ -31,19 +33,67 @@
   opacity: 90%;
 }
 
-/* CARDS BUTTON END  */
-
 .mainPageNavButtonCollection {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   align-items: center;
   border: solid 3px #bbb18b;
   border-radius: 1em;
   width: 150px;
   height: 150px;
   text-decoration: none;
-  background-image: url("../../../public/collectionHome.jpg");
+  background-image: url("myCollection2.jpg");
 }
+
+.mainPageNavButtonMyTrades {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  border: solid 3px #bbb18b;
+  border-radius: 1em;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  background-image: url("myTrades.jpg");
+}
+
+.mainPageNavButtonMyTrades span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border: #bbb18b solid 1px;
+  width: 100%;
+  background-color: #bbb18b;
+  text-align: center;
+  color: black;
+  opacity: 90%;
+}
+
+.mainPageNavButtonCommunityTrades {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  border: solid 3px #bbb18b;
+  border-radius: 1em;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  background-image: url("communityTrades.jpg");
+}
+
+.mainPageNavButtonCommunityTrades span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border: #bbb18b solid 1px;
+  width: 100%;
+  background-color: #bbb18b;
+  text-align: center;
+  color: black;
+  opacity: 90%;
+}
+/* CARDS BUTTON END  */
 
 .mainPageNavButtonCollection span {
   font-family: "Montserrat", sans-serif;
@@ -59,4 +109,33 @@
 :global(a) {
   text-decoration: none;
   font-size: 10px;
+}
+
+.homeHeader {
+  text-align: center;
+
+  font-weight: 700;
+  color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.homeHeader p {
+  font-weight: 300;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.carouselSlidesContainer {
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+}
+
+/* .carouselSlidesContainer span {
+  color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+} */
+.carouselBox {
+  margin-top: 20px;
 }

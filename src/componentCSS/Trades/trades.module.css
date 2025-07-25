@@ -1,0 +1,85 @@
+.mainTradesContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
+}
+
+.cardText {
+  background-color: #bbb18b;
+  width: 80%;
+  text-align: left;
+  opacity: 80%;
+  border-radius: 0.2em;
+  padding-right: 5px;
+}
+.tradeViewer p {
+  background-color: #bbb18b;
+  /* width: 145px; */
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.tradeViewer {
+  display: block;
+  border: solid 2px #bbb18b;
+  border-radius: 1em;
+  margin-top: 20px;
+  /* padding: 10px; */
+  width: 280px;
+  height: 200px;
+  /* background-color: #bbb18b; */
+  opacity: 90%;
+  color: black;
+}
+
+.tradesHeader {
+  text-align: center;
+  color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.backButtonIcon {
+  margin-left: 10px;
+}
+
+.communityTradeViewer {
+  display: block;
+  border: solid 2px #bbb18b;
+  background-color: #bbb18b;
+  border-radius: 1em;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 280px;
+  height: 160px;
+  /* background-color: #bbb18b; */
+  opacity: 90%;
+  color: black;
+  font-size: 15px;
+}
+
+.profileImage {
+  width: 65px;
+  border-radius: 4em;
+  border: #bbb18b solid 2px;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+
+.flagImage {
+  width: 25%;
+  border-radius: 0.05em;
+  border: #bbb18b solid 1px;
+}
+
+.profileBox {
+  display: flex;
+  margin-left: 20px;
+}
+
+.profileTextBox {
+  display: block;
+}

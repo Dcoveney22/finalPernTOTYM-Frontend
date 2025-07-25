@@ -7,7 +7,7 @@
 
 .cardViewer {
   display: flex;
-  border: solid 2px #bbb18b;
+  border: solid 2px #705e13;
   border-radius: 1em;
   margin-top: 20px;
   /* padding: 10px; */
@@ -90,7 +90,8 @@
 .quantityButton {
   font-size: 0.8em;
   text-align: center;
-  width: 60px;
+  width: 150px;
+  height: 140px;
   padding: 10px;
   border: #bbb18b solid 1px;
   border-radius: 1em;
@@ -100,30 +101,61 @@
 }
 
 .quantityButton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  font-size: 3em;
   margin-right: 5px;
   margin-left: 5px;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
-
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
+  align-items: center;
+  background-color: #bbb18b;
+  height: 40px;
+  width: 40px;
+  color: black;
+  border-radius: 7em;
+}
 .actionContainer {
+  display: block;
   border: #bbb18b solid 2px;
   background-color: #bbb18b;
   color: black;
-  opacity: 50%;
+  opacity: 80%;
   border-radius: 1em;
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
 }
+
+.actionBarButtons {
+  margin-top: 20px;
+
+  justify-content: space-around;
+  display: flex;
+}
+
 .actionContainer button {
   width: 20px;
 }
 
 .actionCall {
-  margin-top: 5px;
-  font-size: 0.8em;
+  margin-top: 10px;
+  font-size: 1.2em;
   border-radius: 0.5em;
   padding: 2px;
+  height: 30px;
   background-color: #bbb18b;
   color: black;
 }

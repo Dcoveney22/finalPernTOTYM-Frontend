@@ -14,10 +14,19 @@
 
 .mainHeaderLogo {
   margin-top: 20px;
-  width: 180px;
+  width: 200px;
 }
-
+.navigationContainer {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #bbb18b;
+}
 .navigationContainer a {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-decoration: none;

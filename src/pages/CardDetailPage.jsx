@@ -7,6 +7,7 @@ import {
 import FullCardDetail from "../components/Cards/FullCardDetail";
 import styles from "../componentCSS/Cards/cards.module.css";
 import BackButtonIcon from "../assets/icons/BackButtonIcon2";
+import { addCardToTrade } from "../services/fetchTradeData";
 
 export default function CardDetailPage() {
   const { relic_number } = useParams();
@@ -37,7 +38,7 @@ export default function CardDetailPage() {
     }));
   };
 
-  const handleClick = async (relic_number) => {
+  const handleClickCollection = async (relic_number) => {
     const cardData = {
       relic_number: relic_number,
       quantity: collectQuantity[relic_number],
@@ -45,6 +46,17 @@ export default function CardDetailPage() {
     const response = addCardToCollection(cardData);
     if (response) {
       navigate("/collectionSuccess");
+    }
+  };
+
+  const handleClickTrade = async (relic_number) => {
+    const cardData = {
+      relic_number: relic_number,
+      quantity: collectQuantity[relic_number],
+    };
+    const response = addCardToTrade(cardData);
+    if (response) {
+      navigate("/tradeSuccess");
     }
   };
 
@@ -73,20 +85,38 @@ export default function CardDetailPage() {
           />
           <div className={styles.actionContainer}>
             <div>Pulled this card?</div>
-            <br />
-            <div className={styles.quantityButton}>
-              <button onClick={() => decrementQuantity(card.relic_number)}>
-                -
-              </button>
-              <span>{collectQuantity[card.relic_number] || 0}</span>
-              <button onClick={() => incrementQuantity(card.relic_number)}>
-                +
-              </button>
-              <div
-                className={styles.actionCall}
-                onClick={() => handleClick(card.relic_number)}
-              >
-                Add to Collection
+            <div className={styles.actionBarButtons}>
+              <div className={styles.quantityButton}>
+                <div className={styles.counter}>
+                  <div
+                    className={styles.button}
+                    onClick={() => decrementQuantity(card.relic_number)}
+                  >
+                    -
+                  </div>
+                  <span>{collectQuantity[card.relic_number] || 0}</span>
+                  <div
+                    className={styles.button}
+                    onClick={() => incrementQuantity(card.relic_number)}
+                  >
+                    +
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className={styles.actionCall}
+                    onClick={() => handleClickCollection(card.relic_number)}
+                  >
+                    Add to Collection
+                  </div>
+                </div>
+
+                <div
+                  className={styles.actionCall}
+                  onClick={() => handleClickTrade(card.relic_number)}
+                >
+                  Add to Trade
+                </div>
               </div>
             </div>
           </div>

@@ -1,3 +1,53 @@
+.mainCollectionContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
+}
+.collectionHeader {
+  color: #bbb18b;
+  font-family: "Montserrat", sans-serif;
+}
+.collectionViewer {
+  display: block;
+  border: solid 2px #bbb18b;
+  border-radius: 1em;
+  margin-top: 20px;
+  /* padding: 10px; */
+  width: 280px;
+  height: 200px;
+  /* background-color: #bbb18b; */
+  opacity: 90%;
+  color: black;
+}
+.cardText {
+  background-color: #bbb18b;
+  width: 50%;
+  text-align: left;
+  opacity: 80%;
+  border-radius: 0.2em;
+  padding-right: 5px;
+}
+.collectionViewer p {
+  background-color: #bbb18b;
+  /* width: 145px; */
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.buttonBox {
+  margin-top: -40px;
+  background-color: #bbb18b;
+  height: 70px;
+  border-radius: 0.5em;
+  /* opacity: 80%; */
+}
+
+/* .cardButtonContainer {
+  border: #bbb18b solid 1px;
+} */
 .collectionSuccessContainer {
   display: flex;
   width: auto;
