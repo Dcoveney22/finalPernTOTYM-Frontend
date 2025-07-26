@@ -1,35 +1,47 @@
 .mainTradesContainer {
+  margin-top: 20px;
   width: 100%;
-  display: flex;
+  display: block;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   color: #bbb18b;
   font-family: "Montserrat", sans-serif;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
-
+.divBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .cardText {
   background-color: #bbb18b;
-  width: 80%;
-  text-align: left;
+  width: 100%;
+
+  text-align: center;
   opacity: 80%;
   border-radius: 0.2em;
   padding-right: 5px;
 }
 .tradeViewer p {
   background-color: #bbb18b;
-  /* width: 145px; */
+
   font-size: 0.7em;
   font-weight: 500;
 }
 
 .tradeViewer {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border: solid 2px #bbb18b;
   border-radius: 1em;
-  margin-top: 20px;
+  width: 80%;
   /* padding: 10px; */
-  width: 280px;
-  height: 200px;
+
   /* background-color: #bbb18b; */
   opacity: 90%;
   color: black;
@@ -46,27 +58,29 @@
 }
 
 .communityTradeViewer {
-  display: block;
-  border: solid 2px #bbb18b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 6px black;
   background-color: #bbb18b;
   border-radius: 1em;
-  margin-top: 20px;
-  padding-top: 10px;
   padding-bottom: 10px;
   width: 280px;
-  height: 160px;
+  height: 320px;
   /* background-color: #bbb18b; */
   opacity: 90%;
   color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 15px;
 }
 
 .profileImage {
-  width: 65px;
+  width: 100px;
   border-radius: 4em;
-  border: #bbb18b solid 2px;
+  margin-bottom: 20px;
+  border: black solid 3px;
   margin-right: 10px;
-  margin-top: 40px;
 }
 
 .flagImage {
@@ -76,10 +90,26 @@
 }
 
 .profileBox {
-  display: flex;
-  margin-left: 20px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+
+  text-align: center;
 }
 
 .profileTextBox {
-  display: block;
+  /* display: block; */
+
+  text-align: center;
+}
+
+.buttonBox {
+  /* background-color: #bbb18b; */
+  text-align: right;
+  color: #bbb18b;
+  /* height: 70px; */
+  border-radius: 0.5em;
+
+  /* opacity: 80%; */
 }

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
+import MyProfile from "./pages/myProfile";
 import RegistrationPage from "./pages/RegistrationPage";
 import LoginPage from "./pages/LoginPage";
 import Cards from "./pages/Cards";
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route element={<ProtectedRoute />}>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/profile/myProfile" element={<MyProfile />} />
         <Route path="/cards" element={<Cards />} />
 
         <Route
@@ -39,7 +41,8 @@ const router = createBrowserRouter(
         <Route path="/collectionSuccess" element={<CollectionSuccess />} />
         <Route path="/tradeSuccess" element={<TradeSuccess />} />
         <Route path="/collection" element={<Collection />} />
-        <Route path="/trades" element={<Trades />} />
+        <Route path="/trades/myTrades" element={<Trades />} />
+        {/* <Route path="/trades" element={<Trades />} /> */}
         <Route path="/trades/:user_id" element={<TradesByUser />} />
         <Route path="/communityTrades" element={<CommunityTrades />} />
       </Route>

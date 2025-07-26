@@ -16,12 +16,9 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className={styles.mainMain}>
+      <div className={styles.homeHeader}>WELCOME BACK</div>
       <div className={styles.mainHomePageContainer}>
-        <div className={styles.homeHeader}>
-          THE COMMUNITY APP
-          <p>"made by the community, for the community"</p>
-        </div>
         <NavLink to="/cards">
           <div class={styles.mainPageNavButtonCards}>
             <span>ALL CARDS</span>
@@ -32,7 +29,7 @@ export default function Home() {
             <span>MY COLLECTION</span>
           </div>
         </NavLink>
-        <NavLink to="/trades">
+        <NavLink to="/trades/myTrades">
           <div class={styles.mainPageNavButtonMyTrades}>
             <span>MY TRADES</span>
           </div>
@@ -42,7 +39,6 @@ export default function Home() {
             <span>COMMUNITY TRADES</span>
           </div>
         </NavLink>
-        <button onClick={() => logout()}>LOGOUT</button>
       </div>
       <div className={styles.carouselSlidesContainer}>
         <span className={styles.homeHeader}> CARDS OF THE WEEK</span>

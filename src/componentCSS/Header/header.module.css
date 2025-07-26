@@ -3,6 +3,12 @@
   /* background-color: #000; */
   font-family: "Montserrat", sans-serif;
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(53, 0, 53);
+  z-index: 9999;
+  padding-bottom: 10px;
+  border-bottom: #bbb18b solid 2px;
 }
 
 .logoContainer {
@@ -14,7 +20,7 @@
 
 .mainHeaderLogo {
   margin-top: 20px;
-  width: 200px;
+  width: 150px;
 }
 .navigationContainer {
   display: flex;
@@ -31,4 +37,15 @@
   font-weight: 600;
   text-decoration: none;
   color: #bbb18b;
+}
+.logoutIcon {
+  color: #bbb18b;
+}
+.navButton {
+  font-size: 10px;
+  margin-right: 15px;
+}
+.navBox {
+  display: flex;
+  justify-content: right;
 }

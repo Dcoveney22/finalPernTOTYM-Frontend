@@ -19,3 +19,22 @@ export const fetchCollectionData = async () => {
     console.log("There was an error fetching the collection data:", err);
   }
 };
+
+export const deleteCollectionLine = async (collection_line_id) => {
+  const token = localStorage.getItem("token");
+  try {
+    const response = await fetch(
+      `http://localhost:5000/collection/delete/${collection_line_id}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: token,
+        },
+      }
+    );
+    const deleteItem = await response.json();
+    return deleteItem;
+  } catch (err) {
+    console.log("There was error deleting the line", err);
+  }
+};

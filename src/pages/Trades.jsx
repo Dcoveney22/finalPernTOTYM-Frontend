@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import styles from "../componentCSS/Trades/trades.module.css";
-
 import React from "react";
-import { fetchTradesData } from "../services/fetchTradeData";
+import { deleteTradeLine, fetchTradesData } from "../services/fetchTradeData";
 import TradeViewer from "../components/Trades/TradeViewer";
 import NoCardsToTrade from "../components/Trades/NoCardsToTrade";
 import BackButtonIcon from "../assets/icons/BackButtonIcon2";
 import { useNavigate } from "react-router";
+import DeleteIcon from "../assets/icons/DeleteIcon";
 
 export default function Trades() {
   const [viewTrades, setViewTrades] = useState([]);
@@ -31,6 +31,12 @@ export default function Trades() {
     }
   };
 
+  const handleDelete = async (trade_line_id) => {
+    await deleteTradeLine(trade_line_id);
+    const trades = await fetchTradesData();
+    setViewTrades(trades);
+  };
+
   return (
     <div className={styles.mainTradesContainer}>
       <div onClick={handleBackClick} className={styles.backButtonIcon}>
@@ -40,21 +46,32 @@ export default function Trades() {
       <div className={styles.tradesHeader}>MY TRADES</div>
       {viewTrades.length > 0 ? (
         viewTrades.map((trades) => (
-          <div
-            className={styles.tradeViewer}
-            key={trades.trade_line_id}
-            style={{
-              backgroundImage: `url(/assets/images/cardProfile/${trades.relic_number}_profile.jpg)`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <TradeViewer
-              relic_number={trades.relic_number}
-              creature={trades.creature}
-              quantity={trades.quantity}
-              card_name={trades.card_name}
-            />
+          <div className={styles.divBox}>
+            <div
+              className={styles.tradeViewer}
+              key={trades.trade_line_id}
+              style={{
+                backgroundImage: `url(/assets/images/cardProfile/${trades.relic_number}_profile.jpg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <TradeViewer
+                relic_number={trades.relic_number}
+                creature={trades.creature}
+                quantity={trades.quantity}
+                card_name={trades.card_name}
+              />
+            </div>
+
+            <div
+              className={styles.buttonBox}
+              onClick={() => handleDelete(trades.trade_line_id)}
+            >
+              Del
+              <DeleteIcon />
+              ete
+            </div>
           </div>
         ))
       ) : (

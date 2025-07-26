@@ -50,3 +50,28 @@ export const loginUser = async (loginData) => {
     console.log("there was an error logging in with these details", err);
   }
 };
+
+export const fetchMyProfile = async () => {
+  const token = localStorage.getItem("token");
+
+  try {
+    const response = await fetch(
+      `http://localhost:5000/users/profile/myProfile`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: token,
+        },
+      }
+    );
+    if (response.status === 200) {
+      const userData = await response.json();
+      return userData;
+    }
+    if (response.status === 401) {
+      return { status: 401 };
+    }
+  } catch (err) {
+    console.log("There was an error fetching the user data", err);
+  }
+};

@@ -68,6 +68,10 @@ export default function RegistrationPage() {
     }
   };
 
+  const handleToLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <div className={styles.mainRegisterContainer}>
       <div className={styles.formContainer}>
@@ -227,7 +231,7 @@ export default function RegistrationPage() {
           </div>
           <div
             className={styles.registerButton}
-            onClick={() => handleToRegister()}
+            onClick={() => handleToLogin()}
           >
             Or...
             <br />

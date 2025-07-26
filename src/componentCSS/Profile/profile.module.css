@@ -1,0 +1,83 @@
+.mainProfileContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
+}
+
+.profileBox {
+  margin-top: 30px;
+  background-color: #bbb18b;
+  border: black solid 8px;
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  opacity: 90%;
+}
+
+.profileInnerBox {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.profile_flag {
+  width: 2.5em;
+  border-radius: 0.3em;
+}
+.profileHeader {
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profileImgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile_img {
+  align-items: center;
+  width: 6em;
+  border-radius: 3em;
+  border: black solid 3px;
+}
+
+.regionImageBox {
+  margin-bottom: 15px;
+}
+.profileInfoBox {
+  padding-left: 20px;
+}
+/* .profileInfoBox img {
+  margin-bottom: 20px;
+} */
+
+.navBox {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.navButton {
+  background-color: #bbb18b;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 2em;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 25px;
+}
+
+.navButton a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}

@@ -21,19 +21,6 @@ export default function TradeProfileViewer(props) {
 
   return (
     <div className={styles.profileBox}>
-      <div className={styles.profileTextBox}>
-        <p className={styles.cardText}>
-          Collector Name: {props.community_name}
-        </p>
-        <p className={styles.cardText}>
-          Quantity to trade: {quantityToTrade.length}
-        </p>
-        <img
-          className={styles.flagImage}
-          src={`/${props.region}_flag.png`}
-          alt=""
-        />
-      </div>
       <div>
         <img
           className={styles.profileImage}
@@ -41,6 +28,17 @@ export default function TradeProfileViewer(props) {
           alt=""
         />
       </div>
+
+      <p className={styles.cardText}>Collector Name: {props.community_name}</p>
+      <p className={styles.cardText}>
+        Cards Available To Trade: {quantityToTrade.length}
+      </p>
+
+      <img
+        className={styles.flagImage}
+        src={`/${props.region}_flag.png`}
+        alt=""
+      />
     </div>
   );
 }
