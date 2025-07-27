@@ -4,6 +4,8 @@ import styles from "../../componentCSS/Profile/profile.module.css";
 import { useNavigate } from "react-router";
 import { fetchCollectionData } from "../../services/fetchCollectionData";
 import { fetchTradesData } from "../../services/fetchTradeData";
+import CardsIcon from "../../assets/icons/CardsIcon";
+import GlobeIcon from "../../assets/icons/GlobeIcon";
 
 export default function MyProfileViewer(props) {
   const [collectionQuantity, setCollectionQuantity] = useState([]);
@@ -34,18 +36,24 @@ export default function MyProfileViewer(props) {
             alt=""
           />
         </div>
+
         <div className={styles.profileInfoBox}>
           <div className={styles.regionImageBox}>
-            Trading Region:{" "}
+            <GlobeIcon /> :
             <img
               className={styles.profile_flag}
               src={`/${props.address_region}_flag.png`}
               alt=""
             />
           </div>
-
-          <p>Cards in Collection: {collectionQuantity.length}</p>
-          <p>Cards available to Trade: {tradesQuantity.length}</p>
+          <div className={styles.cardsBox}>
+            <CardsIcon />:
+            <div>
+              <span>Collection: {collectionQuantity.length}</span>
+              <br />
+              <span>Trade: {tradesQuantity.length}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

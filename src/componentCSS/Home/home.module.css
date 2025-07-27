@@ -131,7 +131,7 @@
 }
 
 .carouselSlidesContainer {
-  margin-top: 40px;
+  margin-top: 80px;
   display: block;
   text-align: center;
 }
@@ -142,4 +142,14 @@
 } */
 .carouselBox {
   margin-top: 20px;
+}
+
+.carouselCaption {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.carouseCaptionItem {
+  background-color: #bbb18b;
+  opacity: 60%;
 }

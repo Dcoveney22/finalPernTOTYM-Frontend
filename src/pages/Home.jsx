@@ -41,7 +41,6 @@ export default function Home() {
         </NavLink>
       </div>
       <div className={styles.carouselSlidesContainer}>
-        <span className={styles.homeHeader}> CARDS OF THE WEEK</span>
         <CarouselSlidesHome />
       </div>
     </div>

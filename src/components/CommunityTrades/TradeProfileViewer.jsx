@@ -4,6 +4,9 @@ import {
   fetchTradesDataByUserID,
 } from "../../services/fetchTradeData";
 import styles from "../../componentCSS/Trades/trades.module.css";
+import CommunityIcon from "../../assets/icons/CommunityIcon";
+import CardsIcon from "../../assets/icons/CardsIcon";
+import GlobeIcon from "../../assets/icons/GlobeIcon";
 
 export default function TradeProfileViewer(props) {
   const [quantityToTrade, setQuantityToTrade] = useState([]);
@@ -28,17 +31,22 @@ export default function TradeProfileViewer(props) {
           alt=""
         />
       </div>
-
-      <p className={styles.cardText}>Collector Name: {props.community_name}</p>
+      <p>Trade Profile</p>
       <p className={styles.cardText}>
-        Cards Available To Trade: {quantityToTrade.length}
+        <CommunityIcon /> : {props.community_name}
+      </p>
+      <p className={styles.cardText}>
+        <CardsIcon /> : {quantityToTrade.length}
       </p>
 
-      <img
-        className={styles.flagImage}
-        src={`/${props.region}_flag.png`}
-        alt=""
-      />
+      <p className={styles.cardText}>
+        <GlobeIcon /> :{" "}
+        <img
+          className={styles.flagImage}
+          src={`/${props.region}_flag.png`}
+          alt=""
+        />
+      </p>
     </div>
   );
 }

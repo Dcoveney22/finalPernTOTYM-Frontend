@@ -50,6 +50,10 @@
 .regionImageBox {
   margin-bottom: 15px;
 }
+
+.regionImageBox img {
+  margin-left: 15px;
+}
 .profileInfoBox {
   padding-left: 20px;
 }
@@ -80,4 +84,12 @@
 .navButton a {
   color: black;
   font-family: "Montserrat", sans-serif;
+}
+
+.cardsBox {
+  display: flex;
+}
+
+.cardsBox span {
+  margin-left: 15px;
 }

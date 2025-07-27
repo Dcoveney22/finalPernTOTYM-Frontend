@@ -33,18 +33,15 @@ export default function Header() {
         </div>
         <div className={styles.navButton}>
           {localStorage.getItem("token") && (
-            <NavLink
-              className={styles.logoutIcon}
-              onClick={() => handleLogout()}
-            >
+            <div className={styles.logoutIcon} onClick={() => handleLogout()}>
               Log
               <ExitButtonIcon />
               out
-            </NavLink>
+            </div>
           )}
         </div>
         <div className={styles.navButton}>
-          <NavLink className={styles.logoutIcon} onClick={() => handleLogout()}>
+          <NavLink to="/contactUs" className={styles.logoutIcon}>
             Con
             <ContactUsIcon />
             tact

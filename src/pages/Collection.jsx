@@ -47,7 +47,7 @@ export default function Collection() {
         <div className={styles.noCardMessage}>{status}</div>
       )}
       {myCollection.map((collection) => (
-        <div className={styles.cardButtonContainer}>
+        <div>
           <Link to={`/cards/details/${collection.relic_number}`}>
             <div
               key={collection.collection_line_id}

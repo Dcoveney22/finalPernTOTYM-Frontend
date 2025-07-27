@@ -37,7 +37,7 @@ export default function TradesByUser() {
       <div className={styles.tradesHeader}>TRADES AVAILABLE</div>
       {viewTrades.map((trades) => (
         <div
-          className={styles.tradeViewer}
+          className={styles.tradeViewerByUser}
           key={trades.trade_line_id}
           style={{
             backgroundImage: `url(/assets/images/cardProfile/${trades.relic_number}_profile.jpg)`,
@@ -45,7 +45,12 @@ export default function TradesByUser() {
             backgroundPosition: "center",
           }}
         >
-          <TradeViewer relic_number={trades.relic_number} />
+          <TradeViewer
+            relic_number={trades.relic_number}
+            quantity={trades.quantity}
+            creature={trades.creature}
+            card_name={trades.card_name}
+          />
         </div>
       ))}
     </div>

@@ -67,12 +67,10 @@ export default function LoginPage() {
           >
             LOGIN
           </div>
-          <div
-            className={styles.registerButton}
-            onClick={() => handleToRegister()}
-          >
-            Or... REGISTER HERE
-          </div>
+        </div>
+        <span>Not already a member?</span>{" "}
+        <div className={styles.registerHere} onClick={() => handleToRegister()}>
+          Register Here
         </div>
       </div>
     </div>

@@ -22,12 +22,16 @@ import TradesByUser from "./pages/TradesByUser";
 import Trades from "./pages/Trades";
 import CommunityTrades from "./pages/CommunityTrades";
 import ProtectedRoute from "./components/Auth/ProtectedRoute";
+import ContactUs from "./pages/ContactUs";
+import ContactSuccess from "./pages/ContactSuccess";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route path="/register" element={<RegistrationPage />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/contactUs" element={<ContactUs />} />
+      <Route path="/contactSuccess" element={<ContactSuccess />} />
       <Route element={<ProtectedRoute />}>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />

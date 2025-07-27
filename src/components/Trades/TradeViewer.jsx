@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../../componentCSS/Trades/trades.module.css";
 export default function TradeViewer(props) {
+  console.log(props);
+
   return (
     <div>
       <div>

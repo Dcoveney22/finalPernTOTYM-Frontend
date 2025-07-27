@@ -40,7 +40,7 @@ export default function RegistrationPage() {
       first_line_address: firstLineAddress,
       city_address: cityAddress,
       postcode_address: postcodeAddress,
-      profile_image: profileImage,
+      profile_img: profileImage,
       address_region: addressRegion,
       password: password,
       date_created: dateCreated,
@@ -226,17 +226,12 @@ export default function RegistrationPage() {
               )
             }
           >
-            REGISTER <br />
-            NEW USER
+            REGISTER
           </div>
-          <div
-            className={styles.registerButton}
-            onClick={() => handleToLogin()}
-          >
-            Or...
-            <br />
-            LOGIN HERE
-          </div>
+        </div>
+        <span>Already a user?</span>
+        <div className={styles.loginHere} onClick={() => handleToLogin()}>
+          LOGIN HERE
         </div>
       </div>
     </div>

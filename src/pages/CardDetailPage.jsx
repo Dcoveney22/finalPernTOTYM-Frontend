@@ -84,7 +84,7 @@ export default function CardDetailPage() {
             origin={card.origin}
           />
           <div className={styles.actionContainer}>
-            <div>Pulled this card?</div>
+            <div className={styles.pulledHeader}>Pulled this card?</div>
             <div className={styles.actionBarButtons}>
               <div className={styles.quantityButton}>
                 <div className={styles.counter}>

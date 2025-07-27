@@ -1,26 +1,24 @@
 .mainTradesContainer {
   margin-top: 20px;
   width: 100%;
-  display: block;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+
   flex-wrap: wrap;
   color: #bbb18b;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
   align-items: center;
 }
-.divBox {
+/* .divBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 .cardText {
   background-color: #bbb18b;
   width: 100%;
-
-  text-align: center;
+  text-align: left;
   opacity: 80%;
   border-radius: 0.2em;
   padding-right: 5px;
@@ -33,20 +31,32 @@
 }
 
 .tradeViewer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
   border: solid 2px #bbb18b;
   border-radius: 1em;
-  width: 80%;
+  margin-top: 20px;
   /* padding: 10px; */
-
+  width: 280px;
+  height: 200px;
   /* background-color: #bbb18b; */
   opacity: 90%;
   color: black;
 }
 
+.tradeViewerByUser {
+  display: flex;
+  text-align: center;
+  border: solid 2px #bbb18b;
+  border-radius: 1em;
+  margin-top: 20px;
+  /* padding: 10px; */
+  width: 280px;
+  height: 200px;
+  /* background-color: #bbb18b; */
+  opacity: 90%;
+  color: black;
+}
 .tradesHeader {
   text-align: center;
   color: #bbb18b;
@@ -66,11 +76,11 @@
   border-radius: 1em;
   padding-bottom: 10px;
   width: 280px;
-  height: 320px;
+  height: 450px;
   /* background-color: #bbb18b; */
   opacity: 90%;
   color: black;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 20px;
   font-size: 15px;
 }
@@ -93,8 +103,6 @@
   display: block;
   align-items: center;
   justify-content: center;
-  height: 200px;
-
   text-align: center;
 }
 

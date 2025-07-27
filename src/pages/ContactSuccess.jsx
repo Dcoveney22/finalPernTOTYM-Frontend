@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../componentCSS/Collection/collection.module.css";
+import styles from "../componentCSS/ContactUs/contactUs.module.css";
 import { Link, useNavigate } from "react-router";
 
-export default function TradeSuccess() {
+export default function ContactSuccess() {
   const navigate = useNavigate();
 
   const handleBackClick = async () => {
@@ -16,22 +16,17 @@ export default function TradeSuccess() {
   return (
     <div className={styles.collectionSuccessContainer}>
       <div className={styles.messageContainer}>
-        <p>Congratulations, the card has been added to your trades!</p>
+        <p>
+          Congratulations your message has been sent, a member of the team will
+          be in touch soon.
+        </p>
         <p>
           Thank you for using <em>TOTAL TOTYM</em>
         </p>
       </div>
       <div className={styles.navigationContainer}>
-        <div className={styles.viewCollection}>
-          <Link to="/trades/myTrades">
-            <div>View Trades</div>
-          </Link>
-        </div>
         <div onClick={handleBackClick} className={styles.viewCollection}>
-          <div>
-            Keep <br />
-            Pulling
-          </div>
+          <div>Send another Message</div>
         </div>
         <div className={styles.viewCollection}>
           <Link to="/home">
