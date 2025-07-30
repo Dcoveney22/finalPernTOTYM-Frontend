@@ -34,7 +34,7 @@ export default function CardDetailPage() {
   const decrementQuantity = (id) => {
     setCollectQuantity((prev) => ({
       ...prev,
-      [id]: (prev[id] || 0) - 1,
+      [id]: Math.max(0, (prev[id] || 0) - 1),
     }));
   };
 
