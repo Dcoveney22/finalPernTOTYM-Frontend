@@ -8,22 +8,25 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Root from "./pages/Root";
-import Home from "./pages/Home";
-import MyProfile from "./pages/myProfile";
-import RegistrationPage from "./pages/RegistrationPage";
-import LoginPage from "./pages/LoginPage";
-import Cards from "./pages/Cards";
-import CardDetailPage from "./pages/CardDetailPage";
-import CollectionSuccess from "./pages/CollectionSuccess";
-import Collection from "./pages/Collection";
-import TradeSuccess from "./pages/TradeSuccess";
-import TradesByUser from "./pages/TradesByUser";
-import Trades from "./pages/Trades";
-import CommunityTrades from "./pages/CommunityTrades";
-import ProtectedRoute from "./components/Auth/ProtectedRoute";
-import ContactUs from "./pages/ContactUs";
-import ContactSuccess from "./pages/ContactSuccess";
+
+import TradeSuccess from "./components/Trades/TradeSuccess.jsx";
+import ContactUs from "./components/ContactUs/ContactUs.jsx";
+import TradesByUser from "./components/Trades/TradesByUser.jsx";
+import ProtectedRoute from "./components/Auth/ProtectedRoute.jsx";
+import MyProfileViewer from "./components/MyProfile/MyProfileViewer.jsx";
+import RegistrationPage from "./components/Auth/RegistrationPage.jsx";
+import LoginPage from "./components/Auth/LoginPage.jsx";
+import Cards from "./components/Cards/Cards.jsx";
+import CardDetailPage from "./components/Cards/CardDetailPage.jsx";
+import CollectionViewer from "./components/Collection/collectionViewer.jsx";
+import Collection from "./components/Collection/Collection.jsx";
+import Home from "./components/Home/Home.jsx";
+import Trades from "./components/Trades/Trades.jsx";
+import CommunityTrades from "./components/CommunityTrades/CommunityTrades.jsx";
+import Root from "./components/Home/Root";
+import ContactSuccess from "./components/ContactUs/ContactSuccess";
+import MyProfile from "./components/MyProfile/MyProfile";
+import CollectionSuccess from "./components/Collection/CollectionSuccess.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

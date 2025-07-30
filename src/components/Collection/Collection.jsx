@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import {
   deleteCollectionLine,
   fetchCollectionData,
-} from "../services/fetchCollectionData.js";
-import CollectionViewer from "../components/Collection/collectionViewer.jsx";
-import styles from "../componentCSS/Collection/collection.module.css";
-import BackButtonIcon from "../assets/icons/BackButtonIcon2.jsx";
+} from "../../services/fetchCollectionData.js";
+import CollectionViewer from "./collectionViewer.jsx";
+import styles from "../../componentCSS/Collection/collection.module.css";
+import BackButtonIcon from "../../assets/icons/BackButtonIcon2.jsx";
 import { Link, useNavigate } from "react-router";
-import DeleteIcon from "../assets/icons/DeleteIcon.jsx";
+import DeleteIcon from "../../assets/icons/DeleteIcon.jsx";
 
 export default function Collection() {
   const [myCollection, setMyCollection] = useState([]);

@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import styles from "../componentCSS/Trades/trades.module.css";
+import styles from "../../componentCSS/Trades/trades.module.css";
 import React from "react";
-import { deleteTradeLine, fetchTradesData } from "../services/fetchTradeData";
-import TradeViewer from "../components/Trades/TradeViewer";
-import NoCardsToTrade from "../components/Trades/NoCardsToTrade";
-import BackButtonIcon from "../assets/icons/BackButtonIcon2";
+import {
+  deleteTradeLine,
+  fetchTradesData,
+} from "../../services/fetchTradeData";
+import TradeViewer from "./TradeViewer";
+import NoCardsToTrade from "./NoCardsToTrade";
+import BackButtonIcon from "../../assets/icons/BackButtonIcon2";
 import { useNavigate } from "react-router";
-import DeleteIcon from "../assets/icons/DeleteIcon";
+import DeleteIcon from "../../assets/icons/DeleteIcon";
 
 export default function Trades() {
   const [viewTrades, setViewTrades] = useState([]);

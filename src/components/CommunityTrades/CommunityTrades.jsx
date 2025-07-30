@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { fetchCommunityData } from "../services/fetchCommunityData";
-import { fetchUserData } from "../services/fetchUserData";
-import TradeProfileViewer from "../components/CommunityTrades/TradeProfileViewer";
-import styles from "../componentCSS/Trades/trades.module.css";
-import BackButtonIcon from "../assets/icons/BackButtonIcon2";
+import { fetchCommunityData } from "../../services/fetchCommunityData";
+import { fetchUserData } from "../../services/fetchUserData";
+import TradeProfileViewer from "./TradeProfileViewer";
+import styles from "../../componentCSS/Trades/trades.module.css";
+import BackButtonIcon from "../../assets/icons/BackButtonIcon2";
 import { Link, useNavigate } from "react-router";
 
 export default function CommunityTrades() {

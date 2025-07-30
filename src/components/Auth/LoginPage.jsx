@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { loginUser } from "../services/fetchUserData";
+import { loginUser } from "../../services/fetchUserData";
 import { useNavigate } from "react-router";
-import styles from "../componentCSS/Auth/auth.module.css";
+import styles from "../../componentCSS/Auth/auth.module.css";
 
 export default function LoginPage() {
   const [communityName, setCommunityName] = useState();

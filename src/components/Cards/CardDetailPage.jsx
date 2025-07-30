@@ -3,11 +3,11 @@ import { Link, useNavigate, useParams } from "react-router";
 import {
   addCardToCollection,
   fetchCardByRelicNumber,
-} from "../services/fetchCardData";
-import FullCardDetail from "../components/Cards/FullCardDetail";
-import styles from "../componentCSS/Cards/cards.module.css";
-import BackButtonIcon from "../assets/icons/BackButtonIcon2";
-import { addCardToTrade } from "../services/fetchTradeData";
+} from "../../services/fetchCardData";
+import FullCardDetail from "./FullCardDetail";
+import styles from "../../componentCSS/Cards/cards.module.css";
+import BackButtonIcon from "../../assets/icons/BackButtonIcon2";
+import { addCardToTrade } from "../../services/fetchTradeData";
 
 export default function CardDetailPage() {
   const { relic_number } = useParams();

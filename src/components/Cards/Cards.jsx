@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { fetchCardData } from "../services/fetchCardData";
-import CardViewer from "../components/Cards/CardViewer";
-import styles from "../componentCSS/Cards/cards.module.css";
+import { fetchCardData } from "../../services/fetchCardData";
+import CardViewer from "./CardViewer";
+import styles from "../../componentCSS/Cards/cards.module.css";
 
 import { Link, useNavigate } from "react-router";
-import BackButtonIcon from "../assets/icons/BackButtonIcon2";
+import BackButtonIcon from "../../assets/icons/BackButtonIcon2";
 
 export default function Cards() {
   const [cards, setCards] = useState([]);

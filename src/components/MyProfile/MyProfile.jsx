@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { fetchMyProfile } from "../services/fetchUserData";
-import MyProfileViewer from "../components/MyProfile/MyProfileViewer";
-import styles from "../componentCSS/Profile/profile.module.css";
+import { fetchMyProfile } from "../../services/fetchUserData";
+import MyProfileViewer from "./MyProfileViewer";
+import styles from "../../componentCSS/Profile/profile.module.css";
 import { Link } from "react-router";
 Link;
 export default function MyProfile() {

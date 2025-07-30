@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router";
-import styles from "../componentCSS/Home/home.module.css";
-import CarouselSlidesHome from "../components/Home/CarouselSlidesHome";
+import styles from "../../componentCSS/Home/home.module.css";
+import CarouselSlidesHome from "./CarouselSlidesHome";
 
 export default function Home() {
   // useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../componentCSS/ContactUs/contactUs.module.css";
-import { sendEmailMessage } from "../services/fetchContactUsData";
+import styles from "../../componentCSS/ContactUs/contactUs.module.css";
+import { sendEmailMessage } from "../../services/fetchContactUsData";
 import { useNavigate } from "react-router";
 export default function ContactUs() {
   const [communityName, setCommunityName] = useState();

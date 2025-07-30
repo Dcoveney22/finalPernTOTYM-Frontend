@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
-import { fetchTradesDataByUserID } from "../services/fetchTradeData";
-import TradeViewer from "../components/Trades/TradeViewer";
-import styles from "../componentCSS/Trades/trades.module.css";
-import BackButtonIcon from "../assets/icons/BackButtonIcon2";
+import { fetchTradesDataByUserID } from "../../services/fetchTradeData";
+import TradeViewer from "./TradeViewer";
+import styles from "../../componentCSS/Trades/trades.module.css";
+import BackButtonIcon from "../../assets/icons/BackButtonIcon2";
 
 export default function TradesByUser() {
   const [viewTrades, setViewTrades] = useState([]);

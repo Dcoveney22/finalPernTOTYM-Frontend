@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../componentCSS/Auth/auth.module.css";
-import { registerNewUser } from "../services/fetchUserData";
+import styles from "../../componentCSS/Auth/auth.module.css";
+import { registerNewUser } from "../../services/fetchUserData";
 import { useNavigate } from "react-router";
 
 export default function RegistrationPage() {

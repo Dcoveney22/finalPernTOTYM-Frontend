@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../componentCSS/Collection/collection.module.css";
+import styles from "../../componentCSS/Collection/collection.module.css";
 import { Link, useNavigate } from "react-router";
 
 export default function CollectionSuccess() {
